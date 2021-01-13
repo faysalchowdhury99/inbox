@@ -1,0 +1,74 @@
+/* Body */
+body {
+  background-color: #ffffff;
+  color: #17242b;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+/* Reuseable */
+.para-size {
+  color: #17242b;
+}
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+}
+.fa-bars {
+  color: #17242b !important;
+}
+.navbar-brand {
+  color: #17242b;
+}
+.navbar-brand:hover {
+  color: #17242b;
+}
+.navbar-brand span {
+  color: #ff033f;
+}
+.nav-link {
+  color: #17242b;
+}
+.nav-link.active {
+  color: #ff033f;
+}
+.nav-link:hover {
+  color: #ff033f;
+}
+.dark-light i {
+  background-color: #17242b;
+  color: #ff033f;
+}
+.sidenav {
+  background-color: #f5f5f5;
+}
+@media (max-width: 991px) {
+  .nav-link {
+    color: #17242b;
+  }
+}
+/* Hero */
+#hero-section h1 span {
+  color: #ff033f;
+}
+/* About */
+.button {
+  background-color: #ff033f;
+  color: #ffffff;
+}
+.button:hover {
+  color: #ffffff;
+}
+/* Contact */
+.email a,
+.phone a {
+  color: #ff033f;
+}
+.send-msg-box {
+  box-shadow: 0px 3px 10px #00000021;
+}
+form input,
+form textarea {
+  box-shadow: 0px 3px 10px #00000021;
+  color: #ffffff;
+}

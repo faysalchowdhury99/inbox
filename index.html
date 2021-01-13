@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>INBOX - Online Platform</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link id="day-night" rel="stylesheet" href="css/dark.css" />
+  </head>
+  <body>
+    <!-- ====================================== Start Header Section Here ====================================== -->
+    <!-- Navbar for Mobile -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fa fa-times"></i
+      ></a>
+      <div class="sidenav-links">
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <a class="navbar-brand ms-4 p-1 mt-3" href="index.html"
+              >INBOX<span>.</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#header-section"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#post-section">Latest post's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team-section">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg py-4 py-xxl-5">
+        <div class="container border-bottom">
+          <a class="navbar-brand mt-3" href="index.html">INBOX<span>.</span></a>
+          <button
+            onclick="toggle()"
+            class="nav-link border-0 ms-auto m-0 me-3 dark-light d-lg-none"
+          >
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </button>
+          <button
+            onclick="openNav()"
+            class="navbar-toggler border"
+            type="button"
+          >
+            <span class="fa fa-bars fa-2x text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#header-section"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#post-section">Latest post's</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team-section">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  onclick="toggle()"
+                  class="nav-link border-0 dark-light d-inline-block"
+                >
+                  <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ====================================== End Header Section Here ====================================== -->
+    <!-- Navbar Space -->
+    <div class="navbar-space"></div>
+    <!-- ====================================== Start Hero Section Here ====================================== -->
+    <section class="section" id="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-start align-self-center">
+            <h1>
+              Welcome to <br />
+              <span>Inbox</span>
+            </h1>
+            <p class="para-size mb-5">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi
+            </p>
+            <div class="button-box">
+              <a
+                href="http://facebook.com/inbox5"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                ><span>Visit Inbox</span></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          <div class="col-lg-4 text-center d-none d-lg-block">
+            <img src="img/inbox.jpg" alt="inbox" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================== End Hero Section Here ====================================== -->
+
+    <!-- ====================================== Start About Section Here ====================================== -->
+    <section class="section" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-11">
+            <div class="text-center">
+              <h2 class="heading">About Inbox</h2>
+              <p class="para-size mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                perferendis ab asperiores fugit maxime aliquid voluptate
+                recusandae excepturi vel obcaecati libero doloribus nulla odio
+                et voluptates, debitis illum aut. Asperiores vero dignissimos
+                cum. Cum vero aspernatur dolores earum omnis eligendi sapiente
+                eius, quibusdam tempora vitae amet quis exercitationem, ullam
+                est unde, labore illum alias qui officia. Itaque sint illum
+                accusamus ullam eum fugit necessitatibus a! Illo quasi
+                doloremque natus aperiam, ullam omnis accusantium molestias quas
+                soluta, ducimus illum aspernatur voluptatum?
+              </p>
+              <div class="row g-4 mt-5 pt-3">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="perform-box text-center">
+                    <h3>Facebook Like's</h3>
+                    <p class="para-size mt-4">4500+</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="perform-box text-center">
+                    <h3>Facebook Follower's</h3>
+                    <p class="para-size mt-4">5000+</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="perform-box text-center">
+                    <h3>Total Post's</h3>
+                    <p class="para-size mt-4">500+</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="perform-box text-center">
+                    <h3>Total Video's</h3>
+                    <p class="para-size mt-4">200+</p>
+                  </div>
+                </div>
+              </div>
+              <div class="button-box pt-5 mt-5">
+                <a
+                  class="button"
+                  href="http://facebook.com/inbox5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span>Know more</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================== End About Section Here ====================================== -->
+
+    <!-- ====================================== Start Post Section Here ====================================== -->
+    <section class="section" id="post-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-11 col-lg-10">
+            <div class="text-center">
+              <h2 class="heading">Inbox's Latest Post's</h2>
+              <p class="para-size mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                perferendis ab asperiores fugit maxime aliquid voluptate
+                recusandae excepturi vel obcaecati libero doloribus nulla odio
+                et voluptates, debitis illum aut. Asperiores vero dignissimos
+                cum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5 justify-content-center mt-4 pt-5">
+          <div class="col-sm-6 col-lg-4">
+            <img
+              class="w-100 h-100 img-thumbnail p-0 rounded"
+              src="https://scontent.fcgp8-1.fna.fbcdn.net/v/t1.0-9/130540245_206017710996598_2887066143370337471_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=SiRKFxJud8UAX9N2xnO&_nc_ht=scontent.fcgp8-1.fna&oh=592af3b8333492373c3a3405291ec550&oe=60236FDC"
+              alt="img"
+            />
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img
+              class="w-100 h-100 img-thumbnail p-0 rounded"
+              src="https://scontent.fcgp8-1.fna.fbcdn.net/v/t1.0-9/131997289_218618276403208_6367405088617280265_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8bfeb9&_nc_ohc=-53Yd7jRc6wAX-ud6sr&_nc_ht=scontent.fcgp8-1.fna&oh=322c0e8bab71f0286cf9df3550856445&oe=602428C5"
+              alt="img"
+            />
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img
+              class="w-100 h-100 img-thumbnail p-0 rounded"
+              src="https://scontent.fcgp8-1.fna.fbcdn.net/v/t1.0-9/131984506_217460543185648_2149748570111077565_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=ZJYRQKz5FggAX-W0IwN&_nc_ht=scontent.fcgp8-1.fna&oh=968b316ec5839100180f26bc207a63f2&oe=6024FDC2"
+              alt="img"
+            />
+          </div>
+          <div class="col-12 text-center">
+            <div class="button-box mt-5">
+              <a
+                class="button"
+                href="https://www.facebook.com/media/set/?vanity=inbox5&set=a.111482620450108"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>More Posts</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================== End Post Section Here ====================================== -->
+
+    <!-- ====================================== Start Team Section Here ====================================== -->
+    <section class="section" id="team-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-11 col-lg-10">
+            <div class="text-center">
+              <h2 class="heading">Meet Our Beautiful Team</h2>
+              <p class="para-size mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                perferendis ab asperiores fugit maxime aliquid voluptate
+                recusandae excepturi vel obcaecati libero doloribus nulla odio
+                et voluptates, debitis illum aut. Asperiores vero dignissimos
+                cum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5 mt-5 pt-5">
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/faysal.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Faysal Chowdhury</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/imroz.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Saidur Rahaman Imroz</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/mehedi.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Mehedi Hasan Rafsan</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/sayed.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Sayed Mamun</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/prtmjpg.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Fardin Ibrahim Pritom</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/musa.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Ahmed Musa</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/siddik.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Faied Siddique</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team-img-box overflow-hidden position-relative">
+              <img
+                src="img/alve.jpg"
+                alt="team"
+                class="w-100 img-thumbnail p-0 rounded"
+              />
+              <div class="img-overlay position-absolute">
+                <div class="overlay-text w-100 text-center">
+                  <h3>Tazbidul Hasan Alve</h3>
+                  <p class="para-size mt-2">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================== End Team Section Here ====================================== -->
+
+    <!-- ====================================== Start Contact Section Here ====================================== -->
+    <section class="section mb-5" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 align-self-center mb-5 mb-lg-0">
+            <h2 class="heading">Let's Talk</h2>
+            <p class="para-size my-4">
+              If you have a question or a testimonial for us, feel free to
+              contact us using the form on the right.
+            </p>
+            <div class="contact-info">
+              <div class="email para-size">
+                Email :
+                <a href="mailto:inbox@gmail.com"> inbox@gmail.com</a>
+              </div>
+              <br />
+              <div class="phone para-size">
+                Phone :
+                <a href="javascript:void(0)"> +1 132 456 (7894)</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 align-self-center">
+            <div class="send-msg-box">
+              <form action="javascript:void(0)">
+                <div class="row g-5">
+                  <div class="col-sm-6">
+                    <input
+                      required
+                      name="Name"
+                      type="text"
+                      placeholder="Name"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      required
+                      name="Email"
+                      type="email"
+                      placeholder="Email"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      required
+                      name="Message"
+                      placeholder="Message"
+                      class="w-100"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 pt-2">
+                    <button class="button border-0">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================== End Contact Section Here ====================================== -->
+
+    <!-- ============================= Start footer Section Here ============================= -->
+    <footer>
+      <div class="container pt-5">
+        <div class="footer-widget py-5">
+          <div class="row text-center text-sm-start">
+            <div class="col-sm-6 col-lg-3">
+              <a class="navbar-brand text-white" href="index.html"
+                >INBOX<span>.</span></a
+              >
+              <p class="para-size text-white mt-4">
+                Why I say old chap that is sping lavatory chip shop gosh off
+                his, smashing boot are you taking the piss young.!!
+              </p>
+              <div class="footer-social-icon mt-4 mb-5 pb-3">
+                <a href="https://facebook.com/inbox5"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+                <a href="javascript:void(0)"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-5"></div>
+            <div class="col-sm-3 col-lg-2 mb-5">
+              <div class="footer-sub-heading">Navigation</div>
+              <div class="footer-link py-2 py-sm-5">
+                <p><a href="#about-section">About</a></p>
+                <p><a href="#post-section">Latest Post's</a></p>
+                <p><a href="#team-section">Our Team</a></p>
+                <p><a href="#contact-section">Contact</a></p>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-2 mb-5">
+              <div class="footer-sub-heading">Contacts</div>
+              <div class="footer-contact py-2 py-sm-5 text-white">
+                <p>+1 123 456 8797</p>
+                <p>inbox@mail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-white text-start py-5">
+          <div class="row">
+            <div
+              class="col-sm-6 col-md-7 text-center text-sm-start align-self-center"
+            >
+              <p>Copyright 2021 Inbox | Design by @Faysal</p>
+            </div>
+            <div
+              class="col-sm-6 col-md-5 text-center text-sm-end align-self-center"
+            >
+              <a
+                href="javascript:void(0)"
+                class="me-5 text-white footer-border-end-default"
+                >Terms of use
+              </a>
+              <a href="javascript:void(0)" class="text-white">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================= End Footer Section Here ============================= -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

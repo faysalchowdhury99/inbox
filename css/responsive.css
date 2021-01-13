@@ -1,0 +1,23 @@
+@media screen and (max-width: 991px) {
+  .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 3rem;
+  }
+  .navbar-brand {
+    font-size: 3.5rem;
+  }
+  #hero-section h1 {
+    font-size: 3.5rem;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .footer-social-icon i {
+    margin: 0 0.5rem;
+  }
+}
